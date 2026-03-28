@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>DOKTERTECNO App</title>
+
+  <link rel="icon" href="doktertecno.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- =========================
+       APP SHELL (BACKGROUND)
+       ========================= -->
+  <div class="app-shell">
+
+    <!-- =========================
+         APP CONTAINER
+         ========================= -->
+    <div class="app-container">
+
+      <!-- STATUS BAR -->
+      <div class="status-bar">
+        <span id="time">09:41</span>
+        <div class="status-icons">
+          <span>📶</span>
+          <span>🔋</span>
+        </div>
+      </div>
+
+      <!-- HEADER (HIDDEN SAAT LOGIN) -->
+      <header class="app-header" id="appHeader">
+        <button class="back-btn" onclick="history.back()">←</button>
+        <h1 id="headerTitle">DOKTERTECNO</h1>
+        <button class="notif-btn">🔔</button>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main id="app" class="app-content"></main>
+
+      <!-- FLOATING BUTTON (HIDDEN SAAT LOGIN) -->
+    
+
+      <!-- BOTTOM NAV (HIDDEN SAAT LOGIN) -->
+<nav class="bottom-nav" id="bottomNav">
+
+  <button class="nav-item active" onclick="navigateTo('#/')">
+    <span>🏠</span>
+    <small>Home</small>
+  </button>
+
+  <button class="nav-item" onclick="navigateTo('services')">
+    <span>🛠</span>
+    <small>Layanan</small>
+  </button>
+
+  <button class="nav-item" onclick="navigateTo('track')">
+    <span>📦</span>
+    <small>Tracking</small>
+  </button>
+
+  <button class="nav-item" onclick="navigateTo('about')">
+    <span>ℹ️</span>
+    <small>Tentang</small>
+  </button>
+
+  <button class="nav-item" onclick="navigateTo('account/dashboard')">
+    <span>👤</span>
+    <small>Akun</small>
+  </button>
+
+</nav>
+
+    </div>
+
+  </div>
+
+  <!-- =========================
+       LOGIN SCREEN (FULLSCREEN)
+       ========================= -->
+  <div id="loginScreen" class="login-screen">
+
+    <div class="login-box">
+      <img src="doktertecno.jpeg" class="login-logo" />
+
+      <h2>DOKTERTECNO</h2>
+      <p>Servis Elektronik Tanpa Khawatir</p>
+
+      <form id="loginFormApp">
+        <input type="text" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p class="login-register">
+        Belum punya akun? 
+       <a href="javascript:void(0)" onclick="navigateTo('account/register')">Daftar</a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- =========================
+       SPLASH SCREEN
+       ========================= -->
+  <div id="splashScreen" class="splash">
+    <img src="doktertecno.jpeg" alt="logo">
+    <h2>DOKTERTECNO</h2>
+    <p>Servis Elektronik Tanpa Khawatir</p>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="app.js"></script>
+
+</body>
+</html>
