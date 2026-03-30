@@ -250,10 +250,10 @@ const B2B_ASSETS_DUMMY = [
 // ----- Teknisi dummy -----
 const TEKNISI = [
   { 
-    name: "Rifky Anantta", 
+    name: "Zira", 
     skill: "Laptop • PC • OS Troubleshooting", 
     rating: 5,
-    photo: "teknisigacor31413.jpeg"
+    photo: "download (8).jpg"
   },
   { 
     name: "Wira Hutagalung", 
@@ -262,16 +262,16 @@ const TEKNISI = [
     photo: "teknisisgacorrrr2.jpeg"
   },
   { 
-    name: "Alfarabi Pratama", 
+    name: "Reggina", 
     skill: "Printer • Scanner • Mesin Kasir", 
     rating: 4,
-    photo: "teknisigacorrrr3.jpeg"
+    photo: "download (9).jpg"
   },
   { 
-    name: "Ariel Primbro", 
+    name: "Ruth", 
     skill: "Network • Router • WiFi Setup", 
     rating: 4,
-    photo: "teknisigacorrr4.jpeg"
+    photo: "teknisitergacoorkami.jpg  "
   },
   { 
     name: "Queen Bisdig", 
@@ -292,10 +292,10 @@ const TEKNISI = [
     photo: "teknisigacorr1.jpg"
   },
   { 
-    name: "my bini", 
+    name: "Ainur", 
     skill: "PC Gaming • Modding • Upgrade", 
     rating: 4,
-    photo: "download (8).jpg"
+    photo: "images (2).jpg"
   },
   { 
     name: "dimas blum mandi", 
@@ -316,10 +316,10 @@ const TEKNISI = [
     photo: "WhatsApp Image 2025-11-15 at 17.44.35.jpeg"
   },
   { 
-    name: "hansohee", 
+    name: "Alfarabi", 
     skill: "HP Mid–High End • Kamera & Storage", 
     rating: 5,
-    photo: "download (9).jpg"
+    photo: "teknisigacorrrr3.jpeg"
   },
   { 
     name: "jihyo", 
