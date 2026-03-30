@@ -762,8 +762,8 @@ function renderServiceDetail(slug) {
   Booking servis ${service.name}
 </button>
 
-<button class="btn-ghost btn-full" onclick="navigateTo('booking/${service.slug}')">
-  Konsultasi di Aplikasi
+<button class="btn-ghost btn-full" onclick="openWhatsApp('${service.name}')">
+  Mulai konsultasi
 </button>
           </div>
         </div>
@@ -956,7 +956,7 @@ function renderBooking() {
               <li>Rekomendasi apakah perlu kunjungan teknisi atau cukup remote.</li>
             </ul>
         <button class="btn-ghost" onclick="navigateTo('booking')">
-  Mulai konsultasi di aplikasi
+  Mulai konsultasi
 </button>
           </div>
         </div>
@@ -1961,8 +1961,13 @@ function saveBooking(data) {
   bookings.push(data);
   localStorage.setItem("bookings", JSON.stringify(bookings));
 }
-function openWhatsApp(msg) {
-  console.log("WA dinonaktifkan");
+function openWhatsApp() {
+  const nomor = "6281263457636"; // 👉 GANTI nomor teknisi
+  const pesan = encodeURIComponent(
+    "Halo DOKTERTECNO, saya ingin konsultasi terkait kerusakan perangkat saya."
+  );
+
+  window.open(`https://wa.me/${nomor}?text=${pesan}`, "_blank");
 }
 
 function renderB2BDetail(slug) {
