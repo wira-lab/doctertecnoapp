@@ -2469,7 +2469,18 @@ button {
   position: relative;
 }
 
+/* tombol back tetap kiri */
 .back-btn {
   position: absolute;
   left: 10px;
+}
+
+/* logo di kiri (sebelah judul) */
+.header-logo {
+  position: absolute;
+  right: 45px;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
 }
